@@ -6,6 +6,7 @@
   </head>
   <body>
 	<header class="main-header">
+		<h1 class="visually-hidden">Магазин сайтов Нёрдс</h1>
 		<nav class="main-navigation">
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" width="160" height="65" 
@@ -17,20 +18,56 @@
 				<li><a href="#">Магазин</a></li>
 				<li><a href="#">Контакты</a></li>
 			</ul>
-			<ul class="basket-navigation">
-				<li class="basket-link"><a href="#">Корзина</a></li>
+			<ul class="cart-navigation">
+				<li class="cart-link"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
-		<section class="info-design">
-			<b>Долго, дорого, скрупулезно.</b>
-			<p class="site-design">
-				Математически выверенный дизайн
-				для вашего сайта или мобильного 
-				приложения.
-			</p>
-			<a class="btn-info-design" 
-				href="#">Узнать больше</a>			
-		</section>
+		<div class="slider container">
+            <input type="radio" id="slider-design" class="slider-design" name="slider-radio" checked>
+            <input type="radio" id="slider-math" class="slider-math" name="slider-radio">
+            <input type="radio" id="slider-night" class="slider-night" name="slider-radio">
+            <label for="slider-design"></label>
+            <label for="slider-math"></label>
+            <label for="slider-night"></label>
+                    
+			<section class="slider-left-column">
+                <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
+                <p class="slider-info">Математически выверенный дизайн для 
+									вашего сайта или мобильного приложения.</p>
+                <a href="#" class="button slider-btn">узнать больше</a>
+            </section>
+                   
+				<figure class="slider-design-figure">
+					<img src="img/slider-design-img.png" width="338" height="231" 							
+								alt="Математический дизайн .">
+				</figure>                
+                    
+			<section class="slider-left-column">
+                 <h2 class="slider-title">Любим математику как никто другой</h2>
+                 <p class="slider-info">Никакого креатива, только математические формулы
+										для расчета идеальных пропорций</p>
+                 <a href="#" class="button slider-btn">узнать больше</a>
+            </section>
+                 <figure class="slider-math-figure">
+					<img src="img/slider-math-img.png" width="230" height="249" 
+							alt="Для расчета идеальных пропорций">
+                 </figure>
+                
+                
+            <section class="slider-left-column ">
+                 <h2 class="slider-title">Только ночь,только хардкор!</h2>
+                 <p class="slider-info">Работать днем, как все? Мы против этого.
+												Ближе к полуночи работа только начинается.</p>
+                 <a href="#" class="button slider-btn">узнать больше</a>
+            </section>
+                   
+                 <figure class="slider-night-figure">
+					<img src="img/slider-night-img.png" width="324" height="310" 
+							alt="<Ближе к полуночи">
+                 </figure>
+                
+           
+        </div>
 	</header>
 	<main class="container">
 		<section class="option-offer">
@@ -45,7 +82,7 @@
 						Мир никогда не будет прежним
 						после того как увидит ваш сайт!						
 					</p>					
-					<a class="offer-btn-web " href="#">Заказать</a>
+					<a class="button offer-btn-web " href="#">Заказать</a>
 				</li>
 				<li class="offer-item">
 					<p class="offer-item-image">
@@ -58,7 +95,7 @@
 						в AppStore и Google Play						
 					</p>
 					
-					<a class="offer-btn-mobile" href="#">Заказать</a>					
+					<a class="button offer-btn-mobile" href="#">Заказать</a>					
 				</li>
 				<li class="offer-item">
 					<p class="offer-item-image">
@@ -70,11 +107,12 @@
 						Мир никогда не будет прежним
 						после того как увидит ваш сайт!					
 					</p>				
-						<a class="offer-site" href="#">Заказать</a>					
+						<a class="button offer-site" href="#">Заказать</a>					
 				</li>
 			</ul>	
 		</section>
 		<article class="detail-left-column">
+			<h3 class="visually-hidden">Дизайн-студия</h3>
 			 <b class="detail-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
                 <p class="detail-info">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
                 <b class="detail-list-title">Выполняем заказы на разработку:</b>
@@ -85,9 +123,10 @@
                 </ul>
 		</article>
 		<section class="detail-right-column">
-			<p class="detail-header-image">
+			<h3 class="visually-hidden">Доверие!</h3>
+			<figure class="detail-header-image">
 				<img src="img/main-logo.jpg" width="360" height="208" alt="Nerds">
-			</p>
+			</figure>
 			<b>с 2004 года любим точность во всем:</b>
 			<table>
 				<tr>
@@ -139,8 +178,6 @@
 				<br>
 			</p>
 			<a href="#">Напишите нам</a>
-			<img src="img/map.jpg" width="1725" height="808"
-			alt="Карта">
 		</div>
 		<div class="footer-social">
 			<ul>
@@ -150,10 +187,27 @@
 			</ul>
 		</div>
 		<section class="footer-info">
+			<h3 class="visually-hidden">Скидка</h3>
 			<p class="footer-title"><b>Давайте дружить, это выгодно!</b></p>
 			<p class="footer-info-item">Скидка 10% для друзей из социальных сетей</p>
 		</section>
 	</footer>
+	<div class="feedback-container">
+        <form action="/feedback" method="post">
+				<b>Напишите нам</b>
+                <div class="feedback-left-column">
+                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
+                    <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
+                </div>
+                <div class="feedback-right-column">
+                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+                </div>
+				<label class="feedback-data" for="feedback-textarea">Текст письма:</label>
+				<textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>            
+                <button type="submit" class="btn feedback-btn">Отправить</button>
+        </form>
+	</div>	
   </body>
 </html>
  
