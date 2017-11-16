@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -31,7 +34,7 @@
             <label for="slider-night"></label>
                     
 			<section class="slider-left-column">
-                <h2 class="slider-title">Долго, дорого, скрупулезно.</h2>
+                <b class="slider-title">Долго, дорого, скрупулезно.</b>
                 <p class="slider-info">Математически выверенный дизайн для 
 									вашего сайта или мобильного приложения.</p>
                 <a href="#" class="button slider-btn">узнать больше</a>
@@ -39,11 +42,11 @@
                    
 				<figure class="slider-design-figure">
 					<img src="img/slider-design-img.png" width="338" height="231" 							
-								alt="Математический дизайн .">
+								alt="Математический дизайн">
 				</figure>                
                     
 			<section class="slider-left-column">
-                 <h2 class="slider-title">Любим математику как никто другой</h2>
+                 <b class="slider-title">Любим математику как никто другой</b>
                  <p class="slider-info">Никакого креатива, только математические формулы
 										для расчета идеальных пропорций</p>
                  <a href="#" class="button slider-btn">узнать больше</a>
@@ -55,7 +58,7 @@
                 
                 
             <section class="slider-left-column ">
-                 <h2 class="slider-title">Только ночь,только хардкор!</h2>
+                 <b class="slider-title">Только ночь,только хардкор!</b>
                  <p class="slider-info">Работать днем, как все? Мы против этого.
 												Ближе к полуночи работа только начинается.</p>
                  <a href="#" class="button slider-btn">узнать больше</a>
@@ -95,7 +98,7 @@
 						в AppStore и Google Play						
 					</p>
 					
-					<a class="button offer-btn-mobile" href="#">Заказать</a>					
+					<a class="button offer-mobile" href="#">Заказать</a>					
 				</li>
 				<li class="offer-item">
 					<p class="offer-item-image">
@@ -130,9 +133,9 @@
 			<b>с 2004 года любим точность во всем:</b>
 			<table>
 				<tr>
-					<td>146<sup>%</sup></td>
-					<td>100<sup>%</sup></td>
-					<td>50<sup>%</sup></td>
+					<th>146<sup>%</sup></td>
+					<th>100<sup>%</sup></td>
+					<th>50<sup>%</sup></td>
 				</tr>
 				<tr>
 					<td>Уровень самоотдачи</td>
@@ -168,8 +171,12 @@
 			</ul>
 		</section>
 	</main>
+	<figure>
+		<img class="map-image" src="img/map.jpg">
+	</figure>
 	<footer class="main-footer">
 		<div class="container-contacts">
+			<h3 class="title-contacts">Nёrds Design Studio</h3>
 			<p class="footer-contacts">
 				191186, Санкт-Петербург.<br>
 				ул.Б.Конюшенная,д. 19/8<br>
@@ -177,7 +184,7 @@
 				тел.+7(812)275-75-75<br>
 				<br>
 			</p>
-			<a href="#">Напишите нам</a>
+			<a class="button btn-contacts" href="#">Напишите нам</a>
 		</div>
 		<div class="footer-social">
 			<ul>
@@ -194,7 +201,7 @@
 	</footer>
 	<div class="feedback-container">
         <form action="/feedback" method="post">
-				<b>Напишите нам</b>
+				<b class="modal-feedback-title">Напишите нам</b>
                 <div class="feedback-left-column">
                     <label class="feedback-data" for="feedback-login">Ваше имя:</label>
                     <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
@@ -205,7 +212,8 @@
                 </div>
 				<label class="feedback-data" for="feedback-textarea">Текст письма:</label>
 				<textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>            
-                <button type="submit" class="btn feedback-btn">Отправить</button>
+                <button type="submit" class="button feedback-btn">Отправить</button>
+				<button type="submit" class="btn feedback-btn">Закрыть</button>
         </form>
 	</div>	
   </body>
