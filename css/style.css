@@ -3,17 +3,19 @@ body {
 	padding: 0;
 	
 	
-	font-family: 'Roboto', arial, sans-serif;
+	font-family: 'Roboto', arial, sans-se1rif;
 	background-color: white;
     color: black;
 	font-weight: 400;
 	font-size: 16px;
     line-height: 24px;
+	text-transform: uppercase;
 }
 
 
 a {
 	text-decoration: none;
+	color: #000000;
 }
 
 ul {
@@ -24,37 +26,42 @@ ul {
 	background-color: #eeeeee;
 }
 
+.main-header-logo:hover {
+}
+
+.main-header-logo:focus {
+	opacity: 0.3;
+}
+
+.cart-navigation,
 .site-navigation {
 	font-size: 16px;
 	line-height: 30px;
 	font-weight: 500;
+	color: black;
 }
 
-.cart-navigation {
-	font-size: 16px;
-	line-height: 30px;
-	font-weight: 500;
-}	
 
 .site-navigation a:hover {
 	color: #fb565a;
 }
-.site-navigation a:focus {
+.site-navigation a:active {
 	color: #c0c0c0;
 }
 
-.site-navigation-shop {
-	display: inline-block;
-	border-bottom: 1px solid #fb565a;
-	
-	
+.site-navigation a:focus {
+	border-bottom: 2px solid #fb565a;
 }
 
 .cart-navigation a:hover {
 	color: #fb565a;
 }
-.cart-navigation a:focus{
+.cart-navigation a:active{
 	color: #c0c0c0;
+}
+
+.cart-navigation a:focus {
+	border-bottom: 2px solid #fb565a;
 }
 
 .slider-title {
@@ -73,20 +80,50 @@ ul {
 
 .button {
 	font: inherit;
-  background-color: #fb565a;
-  color: #ffffff; 
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 18px;
+	
+	text-align: center;
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: #fb565a;
+	border: none;
+	color: #ffffff; 
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	
+}
+
+.button:hover {
+	background-color: #d7373b;
+}
+
+.button:active {
+color: rgba(225,255,255,0.3);
 }
 
 .offer-mobile {
 	background-color: #00ca74;
 }
 
+.offer-mobile:hover {
+	background-color: #00bc6c;
+}
+
+.offer-mobile:active {
+	background-color: #00aa62;
+}
 .offer-site {
 	background-color: #efc84a;
 }
+
+.offer-site:hover {
+	background-color: #eab534;
+}
+
+.offer-site:active {
+	background-color: #e5a722;
+}
+
 
 .detail-title {
 	font-size: 45px;
@@ -106,12 +143,31 @@ table td {
 	font-weight: 400;
 }
 
-/*Подвал*/
+.brand-item {
+	opacity: 0.2;
+}
 
-.title-contacts {
+.brand-item:hover {
+	opacity: 1;
+}
+
+.brand-item:active {
+	opacity: 0.1;
+}	
+
+.filter  fieldset {
+	border: none;
+}
+.title-contacts,
+.filter legend {
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
+}
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+
 }
 
 .footer-title {
@@ -131,3 +187,17 @@ table td {
 	line-height: 18px;
 	font-weight: 700;
 }
+textarea,
+.modal-login input[type="text"],
+.modal-login input[type="email"] {
+	font: inherit;
+	color: #444444;
+	border: 2px solid #444444;
+	text-transform: uppercase;
+}
+
+input[required] {
+	border: 2px solid #e74246; 
+	color: #e74246;
+}
+.login-user:

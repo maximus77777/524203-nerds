@@ -200,19 +200,19 @@
 		</section>
 	</footer>
 	<div class="feedback-container">
-        <form action="/feedback" method="post">
-				<b class="modal-feedback-title">Напишите нам</b>
-                <div class="feedback-left-column">
-                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
-                    <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
-                </div>
-                <div class="feedback-right-column">
-                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
-                    <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
-                </div>
+        <form class="modal-login" action="http://echo.htmlacademy.ru" method="post">
+				<b class="modal-feedback-title">Напишите нам</b>			
+				<div class="feedback-left-column">
+					<label class="feedback-data" for="feedback-login">Ваше имя:</label>
+					<input class="login-user" type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
+				</div>
+				<div class="feedback-right-column">
+					<label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+					<input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+				</div>
 				<label class="feedback-data" for="feedback-textarea">Текст письма:</label>
 				<textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>            
-                <button type="submit" class="button feedback-btn">Отправить</button>
+				<button type="submit" class="button feedback-btn">Отправить</button>
 				<button type="submit" class="btn feedback-btn">Закрыть</button>
         </form>
 	</div>	

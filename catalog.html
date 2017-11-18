@@ -10,11 +10,9 @@
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo" href="index.html">
-				<figure class="maine-logo">
+			<a class="main-header-logo" href="#">				
 					<img src="img/logo.png" width="160" height="65" 
-					alt="Логотип Нердс магазин">
-				</figure>	
+					alt="Логотип Нердс магазин">	
 			</a>
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>
@@ -46,7 +44,7 @@
 					<input class="catalog-max-price" type="text" value="15 000">
 				</div>	
 				<fieldset>
-					<legend class="catalog-grid">Сетка:</legend>			
+					<legend class="catalog-title">Сетка:</legend>			
 					<ul class="catalog-grid-list">
 						<li class="filter-option">
 							<input class="visually-hidden filter-input 
@@ -70,7 +68,7 @@
 				</fieldset>
 			
 				<fieldset>
-					<legend class="catalog-features">Особенности:</legend>
+					<legend class="catalog-title">Особенности:</legend>
 					<ul class="catalog-features-list">
 						<li class="filter-option">
 							<input class="visually-hidden filter-input filter-input-checkbox" 
@@ -229,27 +227,22 @@
 			<p class="footer-info-item">Скидка 10% для друзей из социальных сетей</p>
 		</section>
 	</footer>
-	<section class="modal-feedback">
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-				<h3>Напишите нам</h3>
-                <p class="feedback-left-column">
-                    <label class="visually-hidden" for="user-login">Ваше имя:</label>
-                    <input class="login-icon-user" type="text" id="user-login" name="login" 
-						placeholder="Представьтесь, пожалуйста" required>
-                </p>
-                <p class="feedback-right-column">
-                    <label class="visually-hidden" for="user-email">Ваш e-mail:</label>
-                    <input class="login-icon-email" type="email" id="user-email" name="email" 
-						placeholder="Для отправки ответа" required>
-                </p>
-				<p>
-					<label class="visually-hidden" for="feedback-textarea">Текст письма:</label>
-					<textarea class="text-icon" id="feedback-textarea" name="text"
-						placeholder="В свободной форме" required rows="5"></textarea> 
-				</p>		
-                <button class="btn feedback-btn" type="submit">Отправить</button>
+	<div class="feedback-container">
+        <form action="/feedback" method="post">
+				<b class="modal-feedback-title">Напишите нам</b>
+                <div class="feedback-left-column">
+                    <label class="feedback-data" for="feedback-login">Ваше имя:</label>
+                    <input type="text" name="login" id="feedback-login" placeholder="Представьтесь, пожалуйста" required>
+                </div>
+                <div class="feedback-right-column">
+                    <label class="feedback-data" for="feedback-email">Ваш e-mail:</label>
+                    <input type="email" name="email" id="feedback-email" placeholder="Для отправки ответа" required>
+                </div>
+				<label class="feedback-data" for="feedback-textarea">Текст письма:</label>
+				<textarea name="text" id="feedback-textarea" placeholder="В свободной форме" required rows="5"></textarea>            
+                <button type="submit" class="button feedback-btn">Отправить</button>
+				<button type="submit" class="btn feedback-btn">Закрыть</button>
         </form>
-		 <button class="modal-close" type="button">Закрыть</button>
-	</section>	
+	</div>	
   </body>
 </html>
