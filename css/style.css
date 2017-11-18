@@ -165,9 +165,30 @@ table td {
 	font-weight: 700;
 }
 .filter ul {
+	font:inherit;
   list-style: none;
   line-height: 18px;
+}
 
+.filter-input,label {
+	
+	color: #000000;
+	opacity: 0.4;
+}
+
+.filter-input:hover + label {
+	opacity: 1;
+}
+
+.filter-input-range {
+	color: #eeeeee;
+	opacity: 1;
+}
+
+.catalog-min-price,
+.catalog-max-price {
+	background-color: #eeeeee;
+	
 }
 
 .footer-title {
@@ -187,17 +208,57 @@ table td {
 	line-height: 18px;
 	font-weight: 700;
 }
-textarea,
-.modal-login input[type="text"],
-.modal-login input[type="email"] {
+
+.modal-login input {
 	font: inherit;
-	color: #444444;
-	border: 2px solid #444444;
+}
+.modal-login input[type="text"]:placeholder,
+.modal-login input[type="email"],
+textarea {
+	font: inherit;
+	color: rgba(68, 68, 68, 0.502);
+	border: 2px solid rgba(68, 68, 68, 0.502);
 	text-transform: uppercase;
+	outline: none;
 }
 
-input[required] {
-	border: 2px solid #e74246; 
-	color: #e74246;
+
+textarea:hover,
+.modal-login input:hover {
+border: 2px solid #b4b9bb;
+color: #444444;
 }
-.login-user:
+
+textarea:focus,
+.modal-login input:focus {
+border: 2px solid #444444;
+}
+
+.pagination-item,
+.button-show {
+	display: inline-block;
+	color: #000000;
+	background-color: #eeeeee;
+}
+
+.pagination-item:hover,
+.button-show:hover {
+	background-color: #dfdfdf;
+}
+
+.pagination-item:active,
+.button-show:active {
+	background-color: #d5d5d5;
+	opacity: 0.3;
+	color: #000000;
+}
+
+
+
+  
+  
+
+  
+
+
+	
