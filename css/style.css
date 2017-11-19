@@ -2,14 +2,12 @@ body {
 	margin: 0;
 	padding: 0;
 	
-	
 	font-family: 'Roboto', arial, sans-serif;
 	background-color: white;
-    color: black;
+    color: #283136;
 	font-weight: 400;
 	font-size: 16px;
     line-height: 24px;
-	
 }
 
 
@@ -223,13 +221,14 @@ table td {
 .modal-login input[type="text"]:placeholder,
 .modal-login input[type="email"],
 textarea {
-	font: inherit;
 	color: rgba(68, 68, 68, 0.502);
 	border: 2px solid rgba(68, 68, 68, 0.502);
 	text-transform: uppercase;
-	outline: none;
 }
 
+.modal-login input:focus::required {
+    border: 1px solid red;
+}
 
 textarea:hover,
 .modal-login input:hover {
