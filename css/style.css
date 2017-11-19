@@ -164,7 +164,6 @@ table td {
 	font-weight: 700;
 }
 .filter ul {
-	font:inherit;
   list-style: none;
   line-height: 20px;
   font-size: 16px;
@@ -182,16 +181,15 @@ table td {
 }
 
 .filter-input,label {
-	color: #283136;
-	opacity: 0.4;
+	color: #283136;	
 }
 
 .filter-input:hover + label {
 	color: #000000;
-	opacity: 1;
+	
 }
 
-.filter-input:disabled {
+.filter-input:disabled + label {
 	color: #283136;
 	opacity: 0.3;
 }
