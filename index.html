@@ -6,15 +6,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
+	<link href="css/outline1.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
 		<h1 class="visually-hidden">Магазин сайтов Нёрдс</h1>
-		<nav class="main-navigation">
+		<nav class="main-navigation container">
 			<a class="main-header-logo" href="index.html">
 				<img src="img/logo.png" width="160" height="65" 
 				alt="Логотип Нердс магазин">
-			</a>
+			</a>			
 			<ul class="site-navigation">
 				<li><a href="#">Студия</a></li>
 				<li><a href="#">Клиенты</a></li>
@@ -25,10 +26,10 @@
 				<li class="cart-link"><a href="#">Корзина</a></li>
 			</ul>
 		</nav>
-		<div class="slider container">
-            <input type="radio" id="slider-design" class="slider-design" name="slider-radio" checked>
-            <input type="radio" id="slider-math" class="slider-math" name="slider-radio">
-            <input type="radio" id="slider-night" class="slider-night" name="slider-radio">
+		<div class="slider-container container">
+            <input type="radio" id="slider-design" class="visually-hidden" name="slider-radio" checked>
+            <input type="radio" id="slider-math" class="visually-hidden" name="slider-radio">
+            <input type="radio" id="slider-night" class="visually-hidden" name="slider-radio">
             <label for="slider-design"></label>
             <label for="slider-math"></label>
             <label for="slider-night"></label>
@@ -41,40 +42,38 @@
             </section>
                    
 				<figure class="slider-design-figure">
-					<img src="img/slider-design-img.png" width="338" height="231" 							
+					<img src="img/slider-design-img.png" width="760" height="431" 							
 								alt="Математический дизайн">
 				</figure>                
                     
-			<section class="slider-left-column">
+			<section class="slider-none slider-left-column">
                  <b class="slider-title">Любим математику как никто другой</b>
                  <p class="slider-info">Никакого креатива, только математические формулы
 										для расчета идеальных пропорций</p>
                  <a href="#" class="button slider-btn">узнать больше</a>
             </section>
-                 <figure class="slider-math-figure">
-					<img src="img/slider-math-img.png" width="230" height="249" 
+                 <figure class="slider-none slider-math-figure">
+					<img src="img/slider-math-img.png" width="760" height="431" 
 							alt="Для расчета идеальных пропорций">
                  </figure>
                 
                 
-            <section class="slider-left-column ">
+            <section class="slider-none slider-left-column ">
                  <b class="slider-title">Только ночь,только хардкор!</b>
                  <p class="slider-info">Работать днем, как все? Мы против этого.
 												Ближе к полуночи работа только начинается.</p>
                  <a href="#" class="button slider-btn">узнать больше</a>
             </section>
                    
-                 <figure class="slider-night-figure">
-					<img src="img/slider-night-img.png" width="324" height="310" 
+                 <figure class="slider-none slider-night-figure">
+					<img src="img/slider-night-img.png" width="760" height="431" 
 							alt="<Ближе к полуночи">
-                 </figure>
-                
-           
+                 </figure>                          
         </div>
 	</header>
 	<main class="container">
 		<section class="option-offer">
-			<ul class="offer-list">
+			<ul class="offer-list container">
 				<li class="offer-item">
 					<p class="offer-item-image">
 						<img src="img/offer-item-1.jpg" width="300" height="146" 
@@ -114,56 +113,61 @@
 				</li>
 			</ul>	
 		</section>
-		<article class="detail-left-column">
-			<h3 class="visually-hidden">Дизайн-студия</h3>
-			 <b class="detail-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
-                <p class="detail-info">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
-                <b class="detail-list-title">Выполняем заказы на разработку:</b>
-                <ul class="detail-list">
-                    <li class="text-order">Веб-сайтов любой сложности</li>
-                    <li class="text-order">Мобильных приложений для iOS и Android</li>
-                    <li class="text-order">Слайдшоу и видео для корпоративных презентаций</li>
-                </ul>
-		</article>
-		<section class="detail-right-column">
-			<h3 class="visually-hidden">Доверие!</h3>
-			<figure class="detail-header-image">
-				<img src="img/main-logo.jpg" width="360" height="208" alt="Nerds">
-			</figure>
-			<b>с 2004 года любим точность во всем:</b>
-			<table>
-				<tr>
-					<th>146<sup>%</sup></th>
-					<th>100<sup>%</sup></th>
-					<th>50<sup>%</sup></th>
-				</tr>
-				<tr>
-					<td>Уровень самоотдачи</td>
-					<td>Соблюдение сроков</td>
-					<td>Минимальная предоплата</td>
-				</tr>
-			</table>
-			<ul class="brand">
+		<div class="flex-container container">
+			<article class="detail-left-column">
+				<h3 class="visually-hidden">Дизайн-студия</h3>
+				<b class="detail-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+					<p class="detail-info">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+					<b class="detail-list-title">Выполняем заказы на разработку:</b>
+					<ul class="detail-list">
+						<li class="text-order">Веб-сайтов любой сложности</li>
+						<li class="text-order">Мобильных приложений для iOS и Android</li>
+						<li class="text-order">Слайдшоу и видео для корпоративных презентаций</li>
+					</ul>
+			</article>
+			<section class="detail-right-column">
+				<h3 class="visually-hidden">Доверие!</h3>
+					<figure class="detail-header-image">
+						<img src="img/main-logo.png" width="360" height="208" 
+						alt="Nerds">
+					</figure>
+					<b>с 2004 года любим точность во всем:</b>
+					<table>
+						<tr>
+							<th>146<sup>%</sup></th>
+							<th>100<sup>%</sup></th>
+							<th>50<sup>%</sup></th>
+						</tr>
+						<tr>
+							<td>Уровень самоотдачи</td>
+							<td>Соблюдение сроков</td>
+							<td>Минимальная предоплата</td>
+						</tr>
+					</table>					
+			</section>
+		</div>
+		<section class="brand-menu">
+			<ul class="brand container">
 				<li class="brand-item">
-					<a href="#">
+					<a class="brand-item-image" href="#">
 						<img src="img/brand-html-academy.png" width="260" height="180" 
 						alt="html academy">
 					</a>
 				</li>
 				<li class="brand-item">
-					<a href="#">
+					<a class="brand-item-image" href="#">
 						<img src="img/brand-Barbershop.png" width="260" height="180" 
 						alt="Barbershop Borodinsky">
 					</a>
 				</li>
 				<li class="brand-item">
-					<a href="#">
+					<a  class="brand-item-image" href="#">
 						<img src="img/brand-Pink-shop.png" width="260" height="180" 
 						alt="Pink">
 					</a>
 				</li>
 				<li class="brand-item">
-					<a href="#">
+					<a class="brand-item-image" href="#">
 						<img src="img/brand-Mishka-shop.png" width="260" height="180" 
 						alt="Mishka">
 					</a>
@@ -171,11 +175,10 @@
 			</ul>
 		</section>
 	</main>
-	<figure>
-		<img class="map-image" src="img/map.jpg" alt="Карта">
+	<figure class="map-image">
+		<img class="map-image-item" src="img/map.jpg" alt="Карта">
 	</figure>
-	<footer class="main-footer">
-		<div class="container-contacts">
+	<div class="visually-hidden container-contacts">
 			<h3 class="title-contacts">Nёrds Design Studio</h3>
 			<p class="footer-contacts">
 				191186, Санкт-Петербург.<br>
@@ -185,9 +188,11 @@
 				<br>
 			</p>
 			<a class="button btn-contacts" href="#">Напишите нам</a>
-		</div>
-		<div class="footer-social">
-			<ul>
+	</div>
+	<footer class="main-footer container">
+		
+		<div class="footer-social-container">
+			<ul class="footer-social">
 				<li><a class="social-button" href="#">Вконтакте</a></li>
 				<li><a class="social-button" href="#">Фейсбук</a></li>
 				<li><a class="social-button" href="#">Инстаграм</a></li>
@@ -199,7 +204,7 @@
 			<p class="footer-info-item">Скидка 10% для друзей из социальных сетей</p>
 		</section>
 	</footer>
-	<div class="feedback-container">
+	<div class="visually-hidden feedback-container">
         <form class="modal-login" action="http://echo.htmlacademy.ru" method="post">
 				<b class="modal-feedback-title">Напишите нам</b>			
 				<div class="feedback-left-column">

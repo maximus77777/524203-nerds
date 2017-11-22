@@ -304,6 +304,172 @@ border: 2px solid #444444;
 	color: #ffffff;
 }
   
+/*Слайдер*/
+.visually-hidden,
+.slider-none {
+	display: none;
+}
 
 
+
+/*Сеточные стили*/
+
+html,
+body {
+	width: 1440px;
+	min-width: 1160px;
+	min-height: 2475px;
+	padding: 0 20px;
+}
+
+.main-header {
+	min-height: 545px; 
+	margin-bottom: 80px;
+	padding: 0 20px;
 	
+	
+}
+
+.container {
+	width: 100%;
+	margin: 0 20px;
+	padding: 0 0px;
+	
+}
+
+.main-header-logo {
+	width: 180px;
+	height: 65px;
+}
+
+.site-navigation {
+	width: 700px;
+	margin: 0;
+	padding: 0;
+	
+	list-style: none;
+}
+
+.site-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+
+
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 75px;
+}
+
+.slider-container {
+	display: flex;
+	align-items: center;
+	min-height: 350px;
+	margin-top: 29px; 
+}
+
+.slider-left-column {
+	width: 400px;
+	min-height: 350px;
+}
+
+p,
+h1,
+h2,
+h3,
+b {
+	margin: 0;
+	padding: 0;
+}
+
+.offer-list {
+	display: flex;
+	justify-content: space-beetween;
+	margin-bottom: 20px;
+}
+
+.offer-item {
+	width: 380px;
+	min-height: 350px;
+	margin-right: 100px;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 51px;
+}	
+
+.detail-header-image {
+	width: 360px;
+	height: 208;
+}
+
+.detail-left-column {
+	width: 700px;
+	min-height: 370px;
+	margin-top: 56px;
+	margin-right:60px;
+	
+	
+}
+
+.detail-right-column {
+	width: 400px;
+	min-height: 414px;
+	margin-top: 22px;
+	margin-left: 150px;
+	
+}
+
+.brand {
+	display: flex;
+	justify-content: flex-start;
+	margin-bottom: 82px;
+}
+
+.brand-item-image {
+	width: 260px;
+	height: 180px;
+}
+
+.brand-item {
+	margin-right: 40px;
+	width: 260px;
+	height: 180px;
+	margin-right: 3x;
+}
+
+.brand-item:first-child {
+	padding-left: 30px;
+}
+
+.map-image {
+	margin: 0;
+	padding: 0;
+}
+
+.main-footer {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	margin-top: 70px; 
+}
+
+.footer-social {
+	width: 260px;
+	min-height: 80px;
+	
+	margin-right: 31px;
+	
+}
+
+.footer-info {
+	width: 600px;
+	min-height: 80px;
+}

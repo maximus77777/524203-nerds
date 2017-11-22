@@ -1,0 +1,67 @@
+.main-header {
+	outline: 1px solid yellow;
+}	 
+.main-navigation {
+	outline: 1px solid green;
+}
+
+.site-navigation {
+	outline: 1px solid blue;
+}
+
+.cart-navigation {
+	outline: 1px solid red;
+}
+
+.main-header-logo {
+	outline: 1px solid purple;
+}
+
+.main-navigation-wrapper .container {
+	outline: 1px solid black;
+	
+}
+
+.slider-container {
+	outline: 1px solid black;
+}
+
+.slider-left-column{
+	outline: 1px solid green;
+}
+
+.offer-list {
+	outline: 1px solid purple;
+}
+
+.offer-item {
+	outline: 1px solid blue;
+}
+
+.detail-left-column {
+	outline: 1px solid blue;
+}
+	
+.detail-right-column {
+	outline: 1px solid green;
+}
+
+.flex-container {
+	outline: 1px solid green;
+}
+
+.brand-item {
+	outline: 1px solid green;
+}
+
+.main-footer {
+	outline: 1px solid blue;
+}
+
+.footer-info {
+	outline: 1px solid green;
+}
+
+.footer-social {
+	outline: 1px solid red;
+}
