@@ -316,52 +316,56 @@ border: 2px solid #444444;
 
 html,
 body {
-	width: 1440px;
-	min-width: 1160px;
+	min-width: 1200px;
 	min-height: 2475px;
-	padding: 0 20px;
+	margin: 0 auto;
+	box-sizing: border-box;
 }
 
 .main-header {
+	width: 1440px;
 	min-height: 545px; 
 	margin-bottom: 80px;
-	padding: 0 20px;
-	
-	
+		
 }
 
-.container {
-	width: 100%;
-	margin: 0 20px;
-	padding: 0 0px;
-	
+.container {	
+	width: 1200px;
+	margin: 0 auto;	
+	padding: 0 20px; 
 }
 
 .main-header-logo {
 	width: 180px;
 	height: 65px;
+	margin-right: 200px;
 }
 
 .site-navigation {
-	width: 700px;
+	width: 440px;
 	margin: 0;
 	padding: 0;
+	margin-right: 200px;
 	
 	list-style: none;
 }
 
+.cart-navigation {
+	width: 160px;
+	text-align: right;
+}
 .site-navigation {
 	display: flex;
 	align-items: center;
 	justify-content: center; 
 }
 
-
 .main-navigation {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	padding-top: 75px;
+	
 }
 
 .slider-container {
@@ -374,6 +378,7 @@ body {
 .slider-left-column {
 	width: 400px;
 	min-height: 350px;
+	margin:0;
 }
 
 p,
@@ -384,23 +389,31 @@ b {
 	margin: 0;
 	padding: 0;
 }
+main {
+	width: 1440px; 
+	margin-bottom: 80px;
+}	
+
+.option-offer {
+	padding-bottom: 90px;
+}
 
 .offer-list {
 	display: flex;
-	justify-content: space-beetween;
-	margin-bottom: 20px;
 }
 
 .offer-item {
-	width: 380px;
+	width: 300px;
 	min-height: 350px;
 	margin-right: 100px;
+	
 }
 
 .flex-container {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	margin-bottom: 51px;
+	
 }	
 
 .detail-header-image {
@@ -413,8 +426,6 @@ b {
 	min-height: 370px;
 	margin-top: 56px;
 	margin-right:60px;
-	
-	
 }
 
 .detail-right-column {
@@ -453,23 +464,34 @@ b {
 }
 
 .main-footer {
-	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	width: 1440px;
 	margin: 0;
 	padding: 0;
 	margin-top: 70px; 
+	
+}
+
+.footer-info-social {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 .footer-social {
-	width: 260px;
+	display: flex;
+	width: 300px;
 	min-height: 80px;
+	margin-right: 60px;
 	
-	margin-right: 31px;
-	
+	padding: 0;
 }
 
 .footer-info {
 	width: 600px;
 	min-height: 80px;
+}
+
+.main-catalog-header {
+	min-height: 355px;
+	background-color: #eeeeee;
 }
