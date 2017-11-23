@@ -92,3 +92,7 @@ ul {
 li {
 	outline: 1px solid purple;
 }
+
+.button-show {
+	outline: 1px solid blue;
+}
