@@ -50,6 +50,14 @@
 	outline: 1px solid green;
 }
 
+.brand-menu {
+	outline: 1px solid blue;
+}
+
+.brand-item-image {
+	outline: 1px solid red;
+}
+
 .brand-item {
 	outline: 1px solid green;
 }
@@ -96,3 +104,15 @@ li {
 .button-show {
 	outline: 1px solid blue;
 }
+
+figure {
+	outline: 1px solid blue;
+}
+
+svg,
+tr,
+td,
+table {
+	outline: 1px solid blue;
+}
+
