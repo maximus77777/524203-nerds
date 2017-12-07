@@ -561,28 +561,37 @@ tr {
 	
 }
 
-.map-image {
-	
-	margin: 0 auto;
-}
+
 
 .map {
 	position: relative;
-    min-width: 1200px;
-	margin: 0 auto;
-	
-    min-height: 416px;
-    
-
+	height: 416px; 
 	margin-bottom: 70px;
 }
 
+.map-image {
+	
+	width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.map-image::after {
+	content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
 .container-contacts {
+	
 	position: absolute;
 	
+	bottom: 50px;
 	
-	top: 0px;
-	left: 0px;
+	
+	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -591,19 +600,25 @@ tr {
 	width: 319px;
 	min-height: 308px;
 	background-color: #ffffff; 
+    
+	
 }
 
 .marker-image {
-	position: relative;
-	top: 200px;
-	right: 500px;
 	
-	width: 155px;
-	height: 1px;
+	position: absolute;
+	right: 30%;
+	top: 0;
 	
-	margin: 0;
-	padding: 0;
+	
+	display: block;
+	height: 100%;
+	vertical-align: middle;
+    text-align: center;
+	
 }
+
+
 
 .title-contacts {
 	margin-bottom: 27px;
@@ -873,6 +888,7 @@ input[type="radio"].visually-hidden {
 	border-radius: 50%;
 
 	border: 3px solid #000000;
+	opacity: 0.4;
 	
 }
 
@@ -889,6 +905,7 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
   
   background-color: #283136;
+  opacity: 0.4;
 }
 
 .filter-input-checkbox + label::before {
@@ -1157,7 +1174,7 @@ input[type="radio"].visually-hidden {
 	fill-opacity: 1;
 	opacity: 1;
 }
-
+ /*Пагинация*/
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
