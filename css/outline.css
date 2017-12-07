@@ -74,6 +74,10 @@
 	outline: 1px solid red;
 }
 
+.map {
+	outline: 1px solid red;
+}
+
 .map-image {
 	outline: 1px solid green;
 }
@@ -116,3 +120,7 @@ table {
 	outline: 1px solid blue;
 }
 
+.modal-login {
+	outline: 1px solid blue;
+}
+	
