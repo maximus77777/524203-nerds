@@ -32,11 +32,12 @@
 	</header>
 	<main class="container">
 		<h2 class="visually-hidden">Фильтр Сайтов</h2>
+		
 		<div class="catalog-columns">
-			<Section class="catalog-left-column">				
+			<Section class="catalog-left-column">	
 				<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 					<fieldset class="filter-item">
-						<legend>Стоимость:</legend>
+						<legend class="filter-title">Стоимость:</legend>
 						<div class="range-filter">
 							<div class="range-controls">
 								<div class="scale">
@@ -114,7 +115,7 @@
 				<ul class="list-item">
 					<li class="menu-info-item"><a href="#" class="catalog-option-active menu-active">По цене</a></li>
 					<li class="menu-info-item"><a href="#" class="catalog-option-active">По типу</a></li>
-					<li class="menu-info-item"><a href="#" class="catalog-option-active">По функционалу</a></li>
+					<li class="menu-info-item"><a href="#" class="catalog-option-active">По названию</a></li>
 				</ul>
 				<ul class="arrow-list">
 					<li><a href="#" class="arrow arrow-down"></a></li>
@@ -222,8 +223,9 @@
 	</main>
 	<div class="map">
 		<figure class="map-image">
-			<img class="map-image-item" src="img/map.jpg"  alt="Карта">
+			<img class="map-image-item" src="img/map-marker.jpg" height="416" width="1440" alt="Карта">
 		</figure>
+		
 		<div class="container">
 		<div class="container-contacts">
 				<div class="container-info-contacts">
@@ -237,11 +239,9 @@
 				</p>
 				<a class="button btn-contacts" href="#">Напишите нам</a>
 				</div>
-			</div>
-			<div class="marker-image">
-				<img class="map-marker" src="img/map-marker.png"  alt="Маркер">
-			</div>	
 		</div>	
+		</div>
+		
 	</div>
 	<footer class="main-footer">
 		<div class="container">				
@@ -269,7 +269,7 @@
 			</section>	
 		</div>
 	</footer>
-		<section class="modal modal-login">
+		<section class="visually-hidden modal modal-login">
 			<form class="modal-login" action="http://echo.htmlacademy.ru" method="post">
 				<b class="modal-feedback-title">Напишите нам</b>	
 			<div class="form-info">

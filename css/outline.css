@@ -58,7 +58,7 @@
 	outline: 1px solid red;
 }
 
-.brand-item {
+.brand-site {
 	outline: 1px solid green;
 }
 
@@ -124,3 +124,11 @@ table {
 	outline: 1px solid blue;
 }
 	
+.container-contacts {
+	outline: 1px solid blue;
+}
+
+.container-center {
+	
+	outline: 1px solid purple;
+}
