@@ -123,7 +123,7 @@ table {
 .modal-login {
 	outline: 1px solid blue;
 }
-	
+
 .container-contacts {
 	outline: 1px solid blue;
 }
@@ -131,4 +131,8 @@ table {
 .container-center {
 	
 	outline: 1px solid purple;
+}
+
+.footer-contacts {
+	outline: 1px solid red;
 }
