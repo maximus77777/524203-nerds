@@ -136,3 +136,11 @@ table {
 .footer-contacts {
 	outline: 1px solid red;
 }
+
+.modal-feedback-title {
+	outline: 1px solid red;
+}
+
+.catalog-item-info {
+	outline: 1px solid purple;
+}

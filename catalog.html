@@ -6,10 +6,12 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
 		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+		<link href="css/outline.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-catalog-header">
-			<nav class="main-navigation container">
+		<div class="container">
+			<nav class="main-navigation">
 				<a class="main-header-logo" href="index.html">
 					<img src="img/logo.png" width="160" height="65" 
 					alt="Логотип Нердс магазин">
@@ -17,15 +19,15 @@
 				<ul class="site-navigation">
 					<li class="site-item"><a href="index.html">Студия</a></li>
 					<li class="site-item"><a href="#">Клиенты</a></li>
-					<li class="site-item shop-item"><a href="#">Магазин</a></li>
+					<li class="site-item line-active"><a href="#">Магазин</a></li>
 					<li class="site-item"><a href="#">Контакты</a></li>
 				</ul>
 				<ul class="cart-navigation">
-					<li class="site-item cart-link"><a href="#">Корзина</a></li>
+					<li class="site-item "><a class="cart-link" href="#">Корзина</a></li>
 				</ul>
 			</nav>
 			<h1 class="main-header-title">Магазин готовых шаблонов</h1>
-			<div class="line-hop"></div>
+		</div>
 		</header>
 		<main class="container">
 			<h2 class="visually-hidden">Фильтр Сайтов</h2>
@@ -43,8 +45,8 @@
 									<div class="toggle toggle-max"></div>
 								</div>
 								<div class="price-controls">
-									<label class="min-price">от <input name="min-price" type="text" value="0"></label>
-									<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+									<label class="min-price">от<input name="min-price" type="text" value="0"></label>
+									<label class="max-price">до<input name="max-price" type="text" value="15 000"></label>
 								</div>
 							</div>
 						</fieldset>
@@ -101,7 +103,7 @@
 								</li>
 							</ul>
 						</fieldset>
-						<a class="button button-show" href="#">Показать</a>
+						<button type="submit" class="button button-show" href="#">Показать</button>
 					</form>
 				</section>
 				<section class="catalog-right-column">
@@ -129,7 +131,7 @@
 									<section class="catalog-item-block">
 										<h3 class="catalog-item-title"><a href="#">Sedona</a></h3>
 										<p class="catalog-item-info">Информационный сайт<br>для туристов</p>
-										<span class="button catalog-btn">9900 руб.</span>
+										<span class="button catalog-btn">9 900 руб.</span>
 									</section>
 								</div>
 							</li>
@@ -143,7 +145,7 @@
 									<section class="catalog-item-block">
 										<h3 class="catalog-item-title"><a href="#">Pink app</a></h3>
 										<p class="catalog-item-info">Продуктовый лендинг<br>приложения для IOS и Android</p>
-										<span class="button catalog-btn">9900 руб.</span>
+										<span class="button catalog-btn">9 900 руб.</span>
 									</section>
 								</div>
 							</li>
@@ -155,9 +157,9 @@
 										alt="Барбершоп"> 
 									</figure>
 									<section class="catalog-item-block">
-										<h3 class="catalog-item-title-3"><a href="#">Barbershop</a></h3>
+										<h3 class="catalog-item-title"><a href="#">Barbershop</a></h3>
 										<p class="catalog-item-info">Сайт салоны красоты.<br>Для мужчин, да.</p>
-										<span class="button catalog-btn">9900 руб.</span>
+										<span class="button catalog-btn">9 900 руб.</span>
 									</section>
 								</div>
 							</li>
@@ -171,7 +173,7 @@
 									<section class="catalog-item-block">
 										<h3 class="catalog-item-title"><a href="#">Mishka</a></h3>
 										<p class="catalog-item-info">Интернет-магазин<br>вязаных игрушек</p>
-										<span class="button catalog-btn">9900 руб.</span>
+										<span class="button catalog-btn">9 900 руб.</span>
 									</section>
 								</div>
 							</li>
@@ -185,7 +187,7 @@
 									<section class="catalog-item-block">
 										<h3 class="catalog-item-title"><a href="#">A plus</a></h3>
 										<p class="catalog-item-info">Лендинг курсов повышения<br>квалификации</p>
-										<span class="button catalog-btn">9900 руб.</span>
+										<span class="button catalog-btn">9 900 руб.</span>
 									</section>
 								</div>
 							</li>
@@ -199,14 +201,14 @@
 									<section class="catalog-item-block">
 										<h3 class="catalog-item-title"><a href="#">Кваст</a></h3>
 										<p class="catalog-item-info">Промо-сайт производителя<br>крафтового кваса</p>
-										<span class="button catalog-btn">9900 руб.</span>
+										<span class="button catalog-btn">9 900 руб.</span>
 									</section>
 								</div>
 							</li>
 						</ul>
 						<ul class="pagination-list">
 							<li class="pagination-item-current"><a href="#">1</a></li>
-							<li class="pagination-item "><a>2</a></li>
+							<li class="pagination-item "><a href="#">2</a></li>
 							<li class="pagination-item"><a href="#">3</a></li>
 							<li class="pagination-item"><a href="#">Следующая</a></li>
 						</ul>
@@ -215,8 +217,9 @@
 			</div>
 		</main>
 		<div class="map">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="1440" height="416" allowfullscreen></iframe>
 			<figure class="map-image">
-				<img class="map-image-item" src="img/map-marker.jpg" height="416" width="1440" alt="Карта">
+				<img class="map-image-item" src="img/map.jpg" height="416" width="1440" alt="Карта">
 			</figure>
 			<div class="container">
 				<div class="container-contacts">
@@ -256,7 +259,7 @@
 				</section>
 			</div>
 		</footer>
-		<section class="visually-hidden modal modal-login">
+		<section class="modal modal-login">
 			<form class="modal-login" action="http://echo.htmlacademy.ru" method="post">
 				<b class="modal-feedback-title">Напишите нам</b>
 				<div class="form-info">
@@ -274,8 +277,9 @@
 					</div>
 				</div>
 				<button type="submit" class="button modal-feedback-btn">Отправить</button>
-				<button type="submit" class="btn modal-close">Закрыть</button>
 			</form>
+			<button type="submit" class="btn modal-close">Закрыть</button>
 		</section>
+		<script src="js/popup.js"></script>
 	</body>
 </html>
